@@ -1,0 +1,22 @@
+.container {
+  width: 350px;
+  float: center;
+}
+.test-box {
+  border: 2px solid grey;
+  padding: 6px;
+  margin: 20px;
+  background-color: grey
+}
+body {
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+p {
+  color: whitesmoke;
+  text-align: center;
+}
+h1 {
+  color:whitesmoke;
+  text-align: center;
+}
