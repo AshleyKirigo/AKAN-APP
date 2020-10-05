@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <title>AKAN APP</title>
+  <h1>AKAN NAMING SYSTEM</h1>
+</head>
+<body>
+  <div class="container">
+    <p>Hello and welcome.</p>
+    <p>This application will help in deriving what your AKAN name would be.</p>
+    <p>AKAN is a naming system used by Ghanians to give their children names.The names given depend on the day of the week the child was born as well
+       as the gender of the baby</p>
+    <p>Kindly fill in the forms below and let's see what we may have been calling you.</p>
+
+    <form class="myform" onsubmit="return getAkanName()">
+     <label for="year-of-birth">
+       YEAR
+       <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required
+     </label>
+     <br><br>
+
+     <label for="month-of-birth">
+       MONTH
+       <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required
+     </label>
+     <br><br
+
+     <label for="day-of-birth">
+       DAY
+       <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required
+     </label>
+
+     <label for ="gender">
+       <p><strong>YOUR GENDER:</strong></p>
+       MALE
+       <input id="male-input" type="radio" name="gender" value="male" required>
+       FEMALE
+       <input id="female-input" type="radio" name="gender" value="female" required> 
+     </label>
+
+    <br><br>
+    <input id="get-name" type="submit" name="" value="Generate name">
+    <br><br>
+    </form>
+    <form onsubmit="return clearInput()">
+      <input class="clear" type="submit" value="Clear input">  
+    </form>
+    <h2 id= display-name><strong>Your Akan name is:</strong></h2>
+    <p id="result"></p>"
+  </div>
+
+    <script src="./JS/main.js"></script>
+</body>
+</html>
